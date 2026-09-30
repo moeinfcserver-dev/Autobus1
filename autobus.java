@@ -4,6 +4,18 @@ public class autobus
     private int sitzplatze;
     private boolean anhanger;
     
+    public autobus (String neuKennzeichen, int neuSitzplatze, boolean neuAnhanger)
+    {
+        kennzeichen = (neuKennzeichen);
+        sitzplatze = (neuSitzplatze);
+        anhanger = (neuAnhanger);
+    }
+    public autobus ()
+    {
+        kennzeichen = ("W-1234A");
+        sitzplatze = (29);
+        anhanger = (false);
+    }
     public String getKennzeichen()
     {
      return kennzeichen;  
@@ -29,4 +41,5 @@ public class autobus
     {
         anhanger = neuAnhanger;
     }
+    
 }
